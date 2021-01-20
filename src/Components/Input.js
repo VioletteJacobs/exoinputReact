@@ -36,7 +36,7 @@ export class Input extends Component {
                         <h2>{items.nom}</h2>
                         <hr/>
                         <p> 
-                            Tu as {items.age} et tu as pour profession : {items.profession}
+                            Tu as {items.age} et tu es {items.profession}
                         </p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export class Input extends Component {
 
                             <div className="formGroup">
 
-                                <label htmlFor="nom">Nom: </label>
+                                <label htmlFor="Nom">Nom: </label>
                                 <input type="text" nom="nom"
                                 onChange={this.onChange}
                                 value= {this.state.nom}
@@ -67,7 +67,7 @@ export class Input extends Component {
                             <div className="formGroup">
 
                                 <label htmlFor="Age">Age: </label>
-                                <input type="text" name="age"
+                                <input type="number" name="age"
                                 onChange={this.onChange}
                                 value= {this.state.age}
                                 />
